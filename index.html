@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+<body>
+    <div class="container">
+        <div class="head_container">
+            <h1 class="first">Generate a</h1>
+            <h1 class="second">random password</h1>
+            <p>Never use an insecure password again.</p>
+            <div class="lengh_container">
+                <p>Password length:</p> <input type="number" id="myNumber" value="15">
+            </div>
+            <button class="generator" onclick="Generate()">Generate passwords</button>
+        </div>
+        <div class="line"></div>
+        <div class="passwords_container">
+            <button id="firstPassword"></button>
+            <button id="secondPassword"></button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
