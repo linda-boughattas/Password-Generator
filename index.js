@@ -19,3 +19,45 @@ function Restart(){
     firstPasswordEl.textContent =""
     secondPasswordEl.textContent =""
 }
+
+//"Click to copy"
+function setTooltip1() {
+    firstPasswordEl.setAttribute('title', 'Click to copy');
+}
+function setTooltip2() {
+    secondPasswordEl.setAttribute('title', 'Click to copy');
+}
+
+
+firstPasswordEl.addEventListener('mouseenter', setTooltip1);
+secondPasswordEl.addEventListener('mouseenter', setTooltip2);
+
+
+function resetTooltip1() {
+    firstPasswordEl.setAttribute('title', '');
+}
+function resetTooltip2() {
+    secondPasswordEl.setAttribute('title', '');
+}
+firstPasswordEl.addEventListener('mouseleave', resetTooltip1);
+secondPasswordEl.addEventListener('mouseleave', resetTooltip2);
+
+
+//Copying
+const copyContent1 = async () => {
+    try {
+        await navigator.clipboard.writeText(firstPasswordEl.textContent);
+        console.log('Content copied to clipboard');
+    } catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+}
+
+const copyContent2 = async () => {
+    try {
+        await navigator.clipboard.writeText(secondPasswordEl.textContent);
+        console.log('Content copied to clipboard');
+    } catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+}
