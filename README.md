@@ -19,15 +19,3 @@ This project is a simple web-based password generator that allows users to creat
     ```sh
     cd password-generator
     ```
-
-## Usage
-
-1. Open the `index.html` file in your web browser.
-
-2. Set the desired length of the password (must be between 4 and 30 characters).
-
-3. Use the toggles to choose whether to include symbols and numbers in the passwords.
-
-4. Click the "Generate Passwords" button to create two random passwords.
-
-5. Click on any of the generated passwords to copy them to the clipboard.
