@@ -9,13 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const secondPasswordEl = getElement('secondPassword');
 
     initSettings();
+    initTooltips(firstPasswordEl, secondPasswordEl);
+    initClipboard(firstPasswordEl, secondPasswordEl);
 
     const generateButton = getElement('generateButton');
     generateButton.addEventListener('click', () => {
         const length = parseInt(getElement('myNumber').value, 10);
         updatePasswords(length, Symbols, Numbers, firstPasswordEl, secondPasswordEl);
     });
-
-    initTooltips(firstPasswordEl, secondPasswordEl);
-    initClipboard(firstPasswordEl, secondPasswordEl);
 });

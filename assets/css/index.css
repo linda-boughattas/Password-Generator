@@ -1,3 +1,18 @@
+/* index.css */
+:root {
+  /* Import variables from colors.css */
+  @import 'colors.css';
+}
+
+/* General reset and styling */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body,
 html {
   padding: 0;
@@ -5,7 +20,7 @@ html {
 }
 
 body {
-  background-color: #1c1c1c;
+  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +28,7 @@ body {
 }
 
 .container {
-  background-color: #1f2937;
+  background-color: var(--container-bg-color);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 550px;
@@ -23,14 +38,16 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 .head_container {
   width: 446px;
   margin: 0;
 }
+
 .head_container h1,
 .head_container p {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  margin: 0;
+  padding: 0;
 }
 
 .adjust_container {
@@ -50,13 +67,13 @@ body {
 #myNumber {
   width: 35px;
   background-color: transparent;
-  border: 1px solid #e7e7e7;
+  border: 1px solid var(--secondary-text-color);
   border-radius: 3px;
-  color: #ffffff;
+  color: var(--text-color);
   text-align: center;
 }
 
-/*switcher*/
+/* Switcher styles */
 .switch {
   position: relative;
   display: inline-block;
@@ -79,7 +96,6 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -91,22 +107,19 @@ body {
   width: 14px;
   left: 3px;
   bottom: 3px;
-  background-color: white;
-  -webkit-transition: 0.4s;
+  background-color: var(--text-color);
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px var(--accent-color);
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(20px);
-  -ms-transform: translateX(20px);
   transform: translateX(20px);
 }
 
@@ -116,9 +129,11 @@ h1 {
   font-weight: 800;
   line-height: 40px;
   letter-spacing: -2.5%;
+  color: var(--text-color);
 }
+
 p {
-  color: #d5d4d8;
+  color: var(--secondary-text-color);
   font-size: 15px;
   font-family: Inter;
   font-weight: 400;
@@ -127,20 +142,20 @@ p {
 }
 
 .first {
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .second {
-  color: #38bdf8;
+  color: var(--accent-color);
 }
 
 button {
-  background-color: #273549;
+  background-color: var(--button-bg-color);
   height: 39px;
   width: 211px;
   border: none;
   border-radius: 6px;
-  color: #ffffff;
+  color: var(--text-color);
   font-size: 16px;
   font-family: Inter;
   font-weight: 500;
@@ -149,10 +164,9 @@ button {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
-
-  white-space: nowrap; /* Prevents text from wrapping */
-  overflow: hidden; /* Hides overflowing text */
-  text-overflow: ellipsis; /* Adds ellipsis when text overflows */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 button:active {
@@ -161,13 +175,13 @@ button:active {
 }
 
 .generator {
-  background-color: #38bdf8;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--text-color);
   width: 195px;
 }
 
 .generator:hover {
-  background-color: #7dd3fc;
+  background-color: var(--button-hover-color);
 }
 
 .passwords_container {
@@ -183,5 +197,5 @@ button:active {
 .line {
   width: 446px;
   transform: rotate(-1deg);
-  border: 1px solid #2e3d52;
+  border: 1px solid var(--line-color);
 }
