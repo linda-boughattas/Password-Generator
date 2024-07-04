@@ -185,7 +185,7 @@ button:active {
   border: 1px solid var(--line-color);
 }
 
-@media only screen and (min-width:768px) and (min-height: 801px) {
+@media only screen and (min-width:768px) and (min-height: 600px) {
   h1 {
     font-size: 60px;
     font-family: Karla;
@@ -258,6 +258,69 @@ button {
   background-color: var(--accent-color);
   color: var(--text-color);
   width: 280px;
+}
+.adjust_container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 70%;
+}
+}
+
+@media only screen and (min-width:1024px) and (max-height: 600px) {
+  #myNumber {
+    width: 40px;
+    height: 27px;
+    background-color: transparent;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 3px;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 20px;
+  }
+  
+button {
+  background-color: var(--button-bg-color);
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  color: var(--text-color);
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.generator {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  width: 48%;
+}
+.container {
+  background-color: var(--container-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 80%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.adjust_container {
+  margin-top: 30px;
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 }
 
@@ -348,61 +411,6 @@ button {
 .adjust_container {
   margin-top: 30px;
   width: 48.5%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-}
-@media only screen and (min-width:1024px) and (max-height: 600px) {
-  #myNumber {
-    width: 40px;
-    height: 27px;
-    background-color: transparent;
-    border: 1px solid var(--secondary-text-color);
-    border-radius: 3px;
-    color: var(--text-color);
-    text-align: center;
-    font-size: 20px;
-  }
-  
-button {
-  background-color: var(--button-bg-color);
-  height: 40px;
-  width: 100%;
-  border: none;
-  border-radius: 6px;
-  color: var(--text-color);
-  font-size: 18px;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0%;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.generator {
-  background-color: var(--accent-color);
-  color: var(--text-color);
-  width: 48%;
-}
-.container {
-  background-color: var(--container-bg-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 80%;
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.adjust_container {
-  margin-top: 30px;
-  width: 48%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
