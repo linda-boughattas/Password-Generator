@@ -1,13 +1,6 @@
 # Password Generator
+As the name suggests, this web app generates random passwords. Users can specify the length and choose whether to include symbols and numbers. Passwords can be copied to the clipboard with a single click. You can also find it at [passsite.netlify.app.](https://passsite.netlify.app/)
 
-This project is a simple web-based password generator that allows users to create random passwords. Users can specify the length of the password and choose whether to include symbols and numbers in the generated passwords. The passwords can be copied to the clipboard with a single click.
-
-## Features
-
-- Generates random passwords of user-defined length (between 4 and 30 characters).
-- Option to include symbols and numbers in the passwords.
-- Ensures the password length is at least 4 characters and at most 30 characters.
-- Allows users to copy the generated passwords by clicking on them.
 
 ## Installation
 
@@ -19,3 +12,5 @@ This project is a simple web-based password generator that allows users to creat
     ```sh
     cd password-generator
     ```
+## Screenshot
+![Screenshot 2024-07-04 173739](https://github.com/linda-boughattas/Password-Generator/assets/168272328/1fea8a11-e261-4a51-ba7c-88e544c0219a)
